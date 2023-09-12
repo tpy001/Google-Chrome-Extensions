@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           zhihu.com - 2023/9/12 下午3:11:26
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("zhihu.com") {
+    .Tabs.AppHeader-Tabs.css-g0ay3v , .AppHeader-userInfo{
+        display:none;    /* 最上方标题行, 只保留搜索框 */
+    }
+    .Button.FEfUrdfMIKpQDJDqkjte.Button--plain.fEPKGkUK5jyc4fUuT0QP{
+        display:none;    /* 多少人赞同了该回答 */
+    }
+    .QuestionHeader-tags{
+        display:none;    /* 问题的标签 */
+    }
+    .Sticky.QuestionHeader-footer.is-bottom{
+        display:none;    /* 问题描述下方无用的部分 */
+    }
+    .QuestionFollowStatus{
+        display:none;    /* 关注者, 浏览量 */
+    }
+    .Question-sideColumn.Question-sideColumn--sticky.css-1qyytj7{
+        display:none;    /* 右方的侧边栏 */
+    }
+    .Question-mainColumn{
+        width: 900px;   /* 主体变宽*/
+    }
+    .RichContent.RichContent--unescapable{
+        font-size:20px;   /* 主体内容对应的 字体 变大*/
+    }
+    .Button.FollowButton.css-upmq18.FEfUrdfMIKpQDJDqkjte.Button--secondary.Button--blue.E211w_M7Hzs0GMB7BEyA.JmYzaky7MEPMFcJDLNMG{
+        display:none;    /* 与回答的问题内容 无关的东西*/
+    }
+   .Button.ContentItem-action.FEfUrdfMIKpQDJDqkjte.Button--plain.Button--withIcon.Button--withLabel.fEPKGkUK5jyc4fUuT0QP.B46v1Ak6Gj5sL2JTS4PY.RuuQ6TOh2cRzJr6WlyQp
+    , .Button.VoteButton.VoteButton--up.FEfUrdfMIKpQDJDqkjte , .Button.VoteButton.VoteButton--down.FEfUrdfMIKpQDJDqkjte {
+       display:none;
+    }
+    .List-item{
+        border: 2px solid black;   /* 为每个回答添加边框 */
+        
+    }
+    .Question-mainColumnLogin{
+        display:none     /* 提示,让我登录 */
+    }
+    
+    
+    /* 知乎搜索页面 */
+    .css-knqde{
+        display:none;   /* 右方的侧边栏 */
+    }
+}

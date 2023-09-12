@@ -1,0 +1,30 @@
+/* ==UserStyle==
+@name           zhuanlan.zhihu.com - 2023/9/12 下午2:27:40
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("zhuanlan.zhihu.com") {
+    #root > div > main > div > div.ColumnPageHeader-Wrapper{
+        display:none; /*最上方的标题行 */
+    }
+    span.Voters{
+        display:none !important;  /* "多少人赞同了该文章" */
+    } 
+    .css-1ynzxqw{
+        display:none;    /* 下方的提示登录的按钮 */
+    }
+    .Sticky.RichContent-actions.is-fixed.is-bottom , .Sticky.RichContent-actions.is-bottom{
+        display:none;    /* 固定在最下方的那一栏 */
+    }
+    #root > div > main > div > div.Post-Sub.Post-NormalSub > div.Recommendations-Main{
+        display:none;    /* 底部的推荐阅读 */
+    }
+    #root > div > main > div > div.Post-Sub.Post-NormalSub{
+        display:none;    /* 评论区 */
+    }
+    
+    
+}

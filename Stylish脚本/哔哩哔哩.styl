@@ -1,0 +1,165 @@
+/* ==UserStyle==
+@name           www.bilibili.com - 2023/8/24 下午2:10:00
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.bilibili.com/") {
+    /*播放视频的页面*/ 
+    #biliMainHeader{ 
+        display:none !important;  //屏蔽标题栏
+    }
+
+    #viewbox_report > div > div > span:not(.pubdate-ip){
+        display:none !important;  //屏蔽视频标题下方的一些span，只保留视频的发布时间
+    }
+    .video-info-detail .video-info-detail-list .pubdate-ip .pubdate .pubdate-text[data-v-3b903b56]{
+        font-size:18px !important;  //将视频的发布时间对应的文字调大
+    }
+    .fixed-sidenav-storage{
+        display:none;  //屏蔽位于页面右下角的固定元素
+    }
+    .reply-warp .fixed-reply-box{
+        display:none; //屏蔽最下方的回复框
+    }
+    
+    /********************************屏蔽视频下方除了视频简介以外的所有元素*/
+    #bilibili-player > div > div > div.bpx-player-primary-area > div.bpx-player-sending-area{
+        display:none;
+    }
+    #arc_toolbar_report{
+        display:none;
+    }
+    #v_tag{
+        display:none;
+    }
+    #activity_vote{
+        display:none;
+    }
+    #comment > div > div > div > div.reply-header > div.reply-notice{
+        display:none;
+    }
+    /********************************屏蔽视频下方除了视频简介以外的所有元素*/
+    
+    #v_desc > div.basic-desc-info > span{
+        font-size:18px;  //视频简介字体调大
+    }
+    
+     /********************************屏蔽视频右边，除了视频选集之外的元素*/
+    #app > div.video-container-v1 > div.right-container.is-in-large-ab > div > div.up-panel-container{
+        display:none; //屏蔽创作团队
+    }
+    #danmukuBox{
+        display:none; //屏蔽弹幕列表
+    }
+     #reco_list > div.rec-list , #reco_list > div.rec-footer{ 
+        display:none; //屏蔽推荐视频列表
+    }
+    #app > div.video-container-v1 > div.right-container.is-in-large-ab > div > div.pop-live-small-mode.part-undefined{
+        display:none; //屏蔽推荐的直播视频
+    }
+     /********************************屏蔽视频右边，除了视频选集之外的元素*/
+    
+    #multi_page span{
+        font-size:16px; //视频选集文字调大
+    }
+    #multi_page h3{
+        font-size:18px; //视频选集文字调大
+    }
+    #app > div.video-container-v1 > div.right-container.is-in-large-ab{
+        margin-top:200px;  //视频选集的位置适当下移
+    }
+    #multi_page > div.head-con > div.head-right{
+        display:none ; // 屏蔽自动连播
+    }
+    
+ 
+    #comment > div > div > div > div.reply-header > div.reply-navigation > ul > li.nav-sort.hot{
+        display:none;  //屏蔽"评论"附件的"最新" "最热"
+    }
+    #comment > div > div > div > div.reply-warp > div.main-reply-box{
+        display:none;  //屏蔽回复对话框
+    }
+    .reply-item .root-reply-container .content-warp .user-info[data-v-36229167]{
+        display:none;  //屏蔽发表评论的用户的个人信息
+    }
+    .reply-content-container .reply-content .top-icon {
+        display:none;
+    }
+    .reply-item .sub-reply-container{
+        display:none;  //屏蔽对评论的回复
+    }
+    /************************************对于每一条评论, 只保留其评论的时间*/
+    .reply-content-container .reply-content .note-prefix{
+        display:none;
+    }
+    .reply-item .root-reply-container .content-warp .reply-decorate .user-sailing{
+        display:none !important;
+    }
+    .reply-item .root-reply-container .content-warp .root-reply .reply-info span:not(.reply-time){
+        display:none !important;
+    }  
+    .reply-item .root-reply-container .content-warp .root-reply .reply-tag-list{
+        display:none !important;
+    }
+    /************************************对于每一条评论, 只保留其评论的时间*/
+    
+     .reply-item .root-reply-container .content-warp .root-reply span{
+        font-size:19px; //评论的文字调大
+    }
+    .reply-item{
+        margin-bottom:30px; //调大两条评论之间的间距
+    }
+    
+    
+    /*首页*/
+    #i_cecream > div.adblock-tips{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > div.bili-header.large-header > div.bili-header__bar > ul.left-entry{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > div.bili-header.large-header > div.bili-header__bar > ul.right-entry{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > div.bili-header.large-header > div.bili-header__channel{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > div.palette-button-outer.palette-feed4 > div > div{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > div.header-channel{
+        display:none;
+    }
+    .bili-video-card .bili-video-card__info--owner__up {
+        display:none;
+    }
+    .bili-video-card .bili-video-card__info--author {
+        display:none;
+    }
+    .bili-video-card .bili-video-card__info--date {
+        font-size:18px;
+        margin-left:0px; 
+    }
+    .floor-single-card{
+        display:none;
+    }
+    .feed-roll-btn .primary-btn[data-v-f51aa350] {
+       display:none;
+    }
+    #i_cecream > div.bili-feed4 > main > div.feed2 > div > div.container.is-version8 > div.recommended-swipe.grid-anchor{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > div.bili-header.large-header > div.bili-header__banner{
+        display:none;
+    }
+    #i_cecream > div.bili-feed4 > main > div.feed2 > div > div.container.is-version8 > div.bili-live-card.is-rcmd{
+        display:none;
+    }
+    .bili-video-card .bili-video-card__stats {
+        display:none;
+    }
+}
+
