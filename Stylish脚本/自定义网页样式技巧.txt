@@ -23,3 +23,6 @@
 7. .video-info-detail[data-v-3b903b56] 属性选择器，选中第一个div
 	<div class="video-info-detail" data-v-3b903b56>Video Details</div>
 	<div class="video-info-detail">Other Details</div>
+
+8. 通配符选择器
+       [id^="abc"]    选择所有 id 以 abc开头的对象

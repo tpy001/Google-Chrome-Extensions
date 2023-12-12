@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           so.csdn.net - 2023/10/4 下午5:20:50
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://so.csdn.net/so/search") {
+    #csdn-toolbar{
+        display:none;   /* 屏蔽上方的标题栏*/
+    }
+    #app > div.so-list-detail > div.main.clearfix > div > div.main-rt{
+        display:none;   /*屏蔽右侧的侧边栏*/
+    }
+    #app > div.so-list-detail > div.main.clearfix > div > div.main-lt.blog > div.so-search-bar{
+        display:none;   /* 搜索框下面的导航栏 */
+    }
+}
