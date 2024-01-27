@@ -14,9 +14,11 @@
 
 3. .class1:not(.class2) //只选中具有样式class1而没有样式class2的元素
 
-4. .parent:not(.parent > .child) 表示选择具有 .parent 类但没有具有 .child 类的直接子元素的元素。
+4. .parent:not(.parent > .child) 表示选择具有 .parent 类的元素，但是该.parent类没有具有 .child 类的直接子元素的元素。
 
-5. .parent:not(.parent .grandchild) 表示选择具有 .parent 类但没有具有 .grandchild 类的后代元素的元素。
+5. .parent:not(.parent .grandchild) 表示选择具有 .parent 类的元素，但是该parent类没有具有 .grandchild 类的后代元素的元素。
+
+6. .parent > :not(.child) 表示选择.parent类的直接子元素，但是该子元素不是.child类
 
 6. p:not(.col-6):not(.nested > p):not(.special) 选择所有不是 col-6 类和不是嵌套在 .nested 元素内，同时没有 .special 类的 <p> 元素
 
